@@ -1,0 +1,44 @@
+.container {
+	max-width: 220px;
+	width: 100%;
+	padding: 16px;
+	border: 0.5px solid rgb(210, 210, 209);
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+
+	img {
+		width: 100%;
+		object-fit: contain;
+	}
+
+	.title {
+		height: 40px;
+	}
+	.price {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 50px;
+		padding-bottom: 10px;
+		.oldPrice {
+			color: #aaa;
+			text-decoration: line-through;
+			font-size: 14px;
+		}
+	}
+	.promotion {
+		height: 25px;
+		background-color: red;
+		color: white;
+		padding: 2px 8px;
+		border-radius: 5px;
+	}
+
+	.btn {
+		padding: 12px 70px 12px 70px;
+	}
+}
