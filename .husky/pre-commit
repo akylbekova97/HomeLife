@@ -1,5 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
+echo "🐶 Husky hook работает!"
 
 echo "🚀 Запускаем линтинг и форматирование..."
 
