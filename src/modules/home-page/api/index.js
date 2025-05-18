@@ -25,7 +25,7 @@ export const Data = [
         price: 28990,
     },
         {
-        id: '4',
+        id: '5',
         img: 'https://raw.githubusercontent.com/Codecademy/docs/main/media/bird-thumbnail.jpg',
         title: 'Пылесос Tefal Ultra',
         price: 28990,
@@ -68,7 +68,7 @@ export const PromotionData = [
         promotion: '-10%',
     },
         {
-        id: '4',
+        id: '5',
         img: 'https://raw.githubusercontent.com/Codecademy/docs/main/media/bird-thumbnail.jpg',
         title: 'Пылесос Tefal Ultra',
         price: 28990,
