@@ -12,6 +12,7 @@ export function ProductList({ data }) {
           oldPrice={el.oldPrice}
           price={el.price}
           promotion={el.promotion}
+          productRating={el.productRating}
         />
       ))}
     </div>

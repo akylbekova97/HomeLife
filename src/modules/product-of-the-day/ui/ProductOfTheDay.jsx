@@ -27,6 +27,7 @@ export function ProductOfTheDay() {
           price="17990"
           oldPrice="19990"
           promotion="-10%"
+          productRating="5"
         />
       </div>
     </div>

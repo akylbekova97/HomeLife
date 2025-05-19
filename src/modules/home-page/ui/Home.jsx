@@ -10,28 +10,31 @@ export function Home() {
   return (
     <>
       <ProductOfTheDay />
-      <Space h={100} />
+      <Space h={80} />
 
       <div className={s.ProductList}>
-        <Title size="xl-36">Новинки</Title>
-        <Space h={30} />
+        <Title className={s.title} size="xl-36">
+          Новинки
+        </Title>
         <ProductList data={Data} />
       </div>
-      <Space h={90} />
+      <Space h={60} />
 
       <div className={s.ProductList}>
-        <Title size="xl-36">Популярные</Title>
-        <Space h={30} />
+        <Title className={s.title} size="xl-36">
+          Популярные
+        </Title>
         <ProductList data={Data} />
       </div>
-      <Space h={90} />
+      <Space h={60} />
 
       <div className={s.ProductList}>
-        <Title size="xl-36">Акции</Title>
-        <Space h={30} />
+        <Title className={s.title} size="xl-36">
+          Акции
+        </Title>
         <ProductList data={PromotionData} />
       </div>
-      <Space h={90} />
+      <Space h={70} />
     </>
   );
 }

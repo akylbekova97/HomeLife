@@ -1,7 +1,7 @@
 .container {
-  max-width: 220px;
+  max-width: 280px;
   width: 100%;
-  padding: 16px;
+  padding: 20px;
   border: 0.5px solid rgb(210, 210, 209);
   border-radius: 10px;
 
@@ -17,12 +17,13 @@
 
   .title {
     height: 40px;
+    margin-top: 10px;
   }
   .price {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 60px;
     padding-bottom: 10px;
     .oldPrice {
       color: #aaa;
@@ -31,14 +32,37 @@
     }
   }
   .promotion {
-    height: 25px;
     background-color: red;
     color: white;
-    padding: 2px 8px;
+    padding: 5px 8px;
     border-radius: 5px;
   }
 
   .btn {
-    padding: 12px 70px 12px 70px;
+    padding: 12px 90px 12px 90px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 160px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+
+    .title {
+      height: 60px;
+    }
+    .price {
+      p {
+        font-size: 16px;
+      }
+    }
+    .promotion {
+      padding: 3px 5px;
+      font-size: 12px;
+    }
+
+    .btn {
+      padding: 12px 48px;
+    }
   }
 }
