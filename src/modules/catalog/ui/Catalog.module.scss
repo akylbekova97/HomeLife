@@ -1,0 +1,13 @@
+.catalogGrid {
+  max-width: 1252px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  :nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+

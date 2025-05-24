@@ -1,4 +1,4 @@
-import { ProductCatd } from "../../ProductCard";
+import { ProductCatd } from "../../ProductCatd";
 import s from "./ProductList.module.scss";
 
 export function ProductList({ data }) {

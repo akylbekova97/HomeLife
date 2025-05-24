@@ -2,7 +2,7 @@ import { Rating } from "react-simple-star-rating";
 
 import { AppButton } from "../../../../shared/components/ui/button";
 import { Title, Text } from "../../../../shared/components/ui/Text";
-import s from "./ProductCard.module.scss";
+import s from "./ProductCatd.module.scss";
 
 export function ProductCatd({
   img,
