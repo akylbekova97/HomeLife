@@ -5,11 +5,15 @@ import { Layout } from "../layouts/Layout";
 
 // Ленивая загрузка страниц
 const HomePage = lazy(() => import("../../modules/home-page"));
+const CatalogFilter = lazy(() => import("../../modules/catalog/catalogFilter"));
 
 export const router = createBrowserRouter([
   {
     path: ROUTES.Base,
     element: <Layout />,
-    children: [{ path: ROUTES.Home, element: <HomePage /> }],
+    children: [
+      { path: ROUTES.Home, element: <HomePage /> },
+      { path: ROUTES.Catalog, element: <CatalogFilter /> },
+    ],
   },
 ]);

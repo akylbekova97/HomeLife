@@ -1,0 +1,54 @@
+.filterBox {
+  padding-left: 10px;
+  width: 232px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .title {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p {
+      width: 128px;
+    }
+    span {
+      font-weight: 500;
+    }
+  }
+  .bottomTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .inputPrice {
+      display: flex;
+      flex-direction: row;
+      input {
+        width: 80px;
+        height: 24px;
+      }
+    }
+  }
+  p {
+    font-weight: 400;
+  }
+  .input {
+    display: flex;
+    gap: 10px;
+    p {
+      font-weight: 400;
+    }
+    input {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.line {
+  background-color: #d2d2d1;
+  height: 1px;
+  width: 100%;
+}
