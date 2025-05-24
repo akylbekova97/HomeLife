@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: ROUTES.Home, element: <HomePage /> },
-      { path: ROUTES.Catalog, element: <CatalogFilter/> },
+      { path: ROUTES.Catalog, element: <CatalogFilter /> },
     ],
   },
 ]);

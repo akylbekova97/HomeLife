@@ -137,6 +137,6 @@ export const BaseData = [
     productRating: 4.0,
     brand: "Tefal",
     type: "Стандартный",
-    power: '700',
+    power: "700",
   },
 ];

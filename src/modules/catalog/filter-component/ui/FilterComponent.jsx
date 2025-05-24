@@ -1,13 +1,14 @@
 import { Checkbox } from "../../../../shared/components/checkbox";
 import { Text, Title } from "../../../../shared/components/ui/Text";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import s from "./FilterComponent.module.scss";
 import { Input } from "../../../../shared/components/ui/input/ui/Input";
 export function FilterComponent({
+  filterName,
   title,
   data,
   isSlaider = false,
-  onBrandChange,
+  onFilterChange,
 }) {
   const [isOpen, setIsOpen] = useState(true);
   const [minPrice, setMinPrice] = useState("");
@@ -15,13 +16,15 @@ export function FilterComponent({
 
   const changeMinPriceHandler = (e) => {
     setMinPrice(e.target.value);
-    onBrandChange({ min: e.target.value, max: maxPrice });
+    onFilterChange(filterName, { min: e.target.value, max: maxPrice });
   };
   const changeMaxPriceHandler = (e) => {
     setMaxPrice(e.target.value);
-    onBrandChange({ min: minPrice, max: e.target.value });
+    onFilterChange(filterName, { min: minPrice, max: e.target.value });
   };
-
+  const checkboxHandler = (e) => {
+    onFilterChange(filterName, e.target.value);
+  };
   const openFilter = () => {
     setIsOpen(!isOpen);
   };
@@ -53,7 +56,7 @@ export function FilterComponent({
             <>
               {data.map((el, id) => (
                 <div className={s.input} key={id}>
-                  <Checkbox onChange={changeMaxPriceHandler} value={el.value} />
+                  <Checkbox onChange={checkboxHandler} value={el.value} />
                   <Text>{el.value}</Text>
                 </div>
               ))}

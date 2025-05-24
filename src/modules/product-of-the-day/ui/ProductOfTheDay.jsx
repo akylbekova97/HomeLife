@@ -1,5 +1,5 @@
 import { BannerImg } from "../../../shared/assets/imgs/BannerImg.jsx";
-import { ProductCatd } from "../../Product-components/ProductCatd/index.js";
+import { ProductCatd } from "../../Product-components/ProductCard/index.js";
 import { AppLink } from "../../../shared/components/ui/AppLink";
 import { Title } from "../../../shared/components/ui/Text";
 import s from "./ProductOfTheDay.module.scss";

@@ -1,3 +1,3 @@
 import { CatalogFilter } from "./ui/catalogFilter";
 
-export default CatalogFilter
+export default CatalogFilter;

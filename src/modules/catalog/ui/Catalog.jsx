@@ -1,6 +1,6 @@
 import { BaseData } from "../api";
 import s from "./Catalog.module.scss";
-import { ProductCart } from "../../Product-components/ProductCatd";
+import { ProductCatd } from "../../Product-components/ProductCard";
 import { Filter } from "../filter";
 import { FilterContext } from "../../../context/FilterContext";
 import { useContext } from "react";

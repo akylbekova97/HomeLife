@@ -1,1 +1,1 @@
-export { ProductCatd } from "./ui/ProductCatd";
+export { ProductCatd } from "./ui/ProductCard";

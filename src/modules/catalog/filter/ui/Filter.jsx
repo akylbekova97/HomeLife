@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { FilterComponent } from "../../filter-component";
 import { FilterContext } from "../../../../context/FilterContext";
 
@@ -26,24 +26,28 @@ export function Filter() {
   return (
     <div>
       <FilterComponent
-        onBrandChange={(value) => updateFilter("brand", value)}
+        filterName="brand"
+        onFilterChange={updateFilter}
         title={"Бренд"}
         data={Data1}
       />
       <FilterComponent
+        filterName="price"
         title={"Цена"}
         isSlaider
-        onBrandChange={(value) => updateFilter("price", value)}
+        onFilterChange={updateFilter}
       />
       <FilterComponent
+        filterName="type"
         title={"Тип"}
         data={Data2}
-        onBrandChange={(value) => updateFilter("type", value)}
+        onFilterChange={updateFilter}
       />
       <FilterComponent
+        filterName="power"
         title={"Потребляемая мощность"}
         data={Data3}
-        onBrandChange={(value) => updateFilter("power", value)}
+        onFilterChange={updateFilter}
       />
     </div>
   );

@@ -1,10 +1,10 @@
-import { FilterProvider } from "../../../../context/FilterContext";
+import { FilterProvider } from "../../../../context/FilterProvider";
 import { Catalog } from "../../ui/Catalog";
 
 export function CatalogFilter() {
-  return(
+  return (
     <FilterProvider>
-    <Catalog />
-  </FilterProvider>
-  )
+      <Catalog />
+    </FilterProvider>
+  );
 }
