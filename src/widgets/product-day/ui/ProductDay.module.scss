@@ -17,5 +17,10 @@
     width: 100%;
     display: grid;
     gap: 0;
+
+    .product {
+      max-width: 250px;
+      padding-top: 30px;
+    }
   }
 }
