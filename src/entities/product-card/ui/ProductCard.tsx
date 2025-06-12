@@ -1,3 +1,4 @@
+import type { ProductTypes } from 'shared/types/ProductTypes'
 import { AppButton } from 'shared/ui/AppButton/AppButton'
 import { Price } from 'shared/ui/Price/Price'
 import { Rating } from 'shared/ui/Rating/Rating'
@@ -5,17 +6,8 @@ import { Title } from 'shared/ui/Text/ui/Title/Title'
 
 import s from './ProductCard.module.scss'
 
-interface CardTypes {
-  id: string
-  img: string
-  title: string
-  price: string
-  oldPrice: string
-  promotion: string
-  productRating: number
-}
 interface ProductCardTypes {
-  data: CardTypes
+  data: ProductTypes
 }
 
 export function ProductCard({ data }: ProductCardTypes) {
