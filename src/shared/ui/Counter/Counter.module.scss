@@ -1,0 +1,28 @@
+.counter {
+  width: 122px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    cursor: pointer;
+  }
+
+  p {
+    cursor: pointer;
+    width: 60px;
+    height: 34px;
+    background: rgb(210, 210, 209);
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    p {
+      width: 50px;
+      height: 30px;
+    }
+  }
+}

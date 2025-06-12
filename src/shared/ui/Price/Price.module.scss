@@ -1,0 +1,23 @@
+.oldPrice {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+.promotion {
+  background-color: red;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .oldPrice {
+    font-size: 12px;
+  }
+  .p {
+    font-size: 14px;
+  }
+  .promotion {
+    padding: 3px 5px;
+    font-size: 12px;
+  }
+}
