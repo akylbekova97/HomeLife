@@ -1,0 +1,15 @@
+.link {
+  max-width: 300px;
+  width: 100%;
+  a {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(210, 210, 209);
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    a {
+      font-size: 14px;
+    }
+  }
+}

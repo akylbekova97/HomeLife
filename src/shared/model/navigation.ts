@@ -1,7 +1,7 @@
 export const ROUTES = {
   // Cient routes
   Base: '/',
-  Home: '/home',
+  Home: '/',
 
   // Admin routes
   // Admin: '/admin',

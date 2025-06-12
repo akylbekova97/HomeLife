@@ -1,0 +1,21 @@
+.container {
+  max-width: 1252px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+
+  img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    display: grid;
+    gap: 0;
+  }
+}

@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 
+import { ProductDay } from 'widgets/product-day'
+
 import { useFetch } from 'shared/hooks/useFetch'
 
 export function Home() {
@@ -14,7 +16,7 @@ export function Home() {
 
   return (
     <div>
-      <h1>Home</h1>
+      <ProductDay />
     </div>
   )
 }
