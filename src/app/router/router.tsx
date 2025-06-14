@@ -3,14 +3,24 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import { RouterLayout } from 'app/layout/RouterLayout'
 
+import { CommentForm } from 'features/commet-form'
+
 import { ROUTES } from 'shared/model/navigation'
 
-const Home = lazy(() => import('../../pages/home'))
+const Home = lazy(() => import('pages/home'))
+const ProductPage = lazy(() => import('pages/product-page'))
 
 export const router = createBrowserRouter([
   {
     path: ROUTES.Base,
     element: <RouterLayout />,
-    children: [{ path: ROUTES.Home, element: <Home /> }],
+    children: [
+      { path: ROUTES.Home, element: <Home /> },
+      {
+        path: ROUTES.CatalogItem,
+        element: <ProductPage />,
+        children: [{ path: `reviews`, element: <CommentForm /> }],
+      },
+    ],
   },
 ])

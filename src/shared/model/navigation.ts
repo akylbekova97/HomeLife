@@ -1,7 +1,8 @@
 export const ROUTES = {
-  // Cient routes
+  // Client routes
   Base: '/',
   Home: '/',
+  CatalogItem: 'catalog/:id',
 
   // Admin routes
   // Admin: '/admin',

@@ -12,10 +12,10 @@ interface Props {
     | 'lg-30'
     | 'md-28'
     | 'md-20'
-    | 'ms-20 '
+    | 'md-20'
     | 'sm-18'
     | 'sm-16'
-    | 'ms-14'
+    | 'sm-14'
 }
 
 export function Title({ className, children, size = 'md-28' }: Props) {
