@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+
+  border: 0.5px solid rgb(210, 210, 209);
+  border-radius: 10px;
+  padding: 20px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    .text {
+      display: grid;
+      gap: 8px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 13px;
+  }
+}

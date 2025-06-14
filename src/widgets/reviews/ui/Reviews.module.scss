@@ -1,0 +1,21 @@
+// .flex {
+//   max-width: 806px;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   padding-bottom: 10px;
+
+//   b {
+//     font-weight: 900;
+//     font-size: 27px;
+//   }
+// }
+
+.container {
+  max-width: 806px;
+  width: 100%;
+  padding-top: 20px;
+
+  display: grid;
+  gap: 20px;
+}
