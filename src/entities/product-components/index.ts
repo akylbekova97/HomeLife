@@ -1,3 +1,1 @@
-export { ProductDescription } from './ui/ProductDesctiption/ProductDescription'
-export { Characteristic } from './ui/Characteristic/Characteristic'
-export { AboutProduct } from './ui/AboutProduct/AboutProduct'
+export { ProductDescription } from './ui/ProductDescription'

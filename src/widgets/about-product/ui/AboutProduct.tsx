@@ -4,11 +4,7 @@ import { Text, Title } from 'shared/ui/Text'
 
 import s from './AboutProduct.module.scss'
 
-interface Props {
-  About: About
-}
-
-export function AboutProduct({ About }: Props) {
+export function AboutProduct({ About }: About) {
   return (
     <>
       <Space h={60} />
@@ -22,8 +18,10 @@ export function AboutProduct({ About }: Props) {
         >
           {About.aboutTitle}
         </Title>
-        <Text size="sm-16">{About.aboutText}</Text>
+        <Text size="sm-14">{About.aboutText}</Text>
       </div>
+
+      <Space h={60} />
     </>
   )
 }

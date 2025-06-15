@@ -1,0 +1,9 @@
+.felx {
+  padding-top: 13px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    gap: 50px;
+  }
+}

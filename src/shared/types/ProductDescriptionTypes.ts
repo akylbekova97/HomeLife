@@ -4,8 +4,10 @@ export interface Characteristics {
 }
 
 export interface About {
-  aboutTitle: string
-  aboutText: string
+  About: {
+    aboutTitle: string
+    aboutText: string
+  }
 }
 
 export interface DescriptionTypes {
@@ -19,7 +21,10 @@ export interface DescriptionTypes {
   oldPrice?: string
   promotion?: string
   Characteristics: Characteristics[]
-  About: About
+  About: {
+    aboutTitle: string
+    aboutText: string
+  }
 }
 
 export interface ProductDescriptionTypes {
@@ -28,5 +33,4 @@ export interface ProductDescriptionTypes {
 
 export interface CharacteristicsTypes {
   Characteristics: Characteristics[]
-  About: About
 }
