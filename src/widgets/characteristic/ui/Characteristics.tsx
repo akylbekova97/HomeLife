@@ -1,16 +1,22 @@
-import { Characteristic } from 'entities/product-components'
-import { AboutProduct } from 'entities/product-components'
+import { Characteristic } from 'entities/characteristic'
 
 import type { CharacteristicsTypes } from 'shared/types/ProductDescriptionTypes'
+import { Title } from 'shared/ui/Text'
 
-export function Characteristics({
-  Characteristics,
-  About,
-}: CharacteristicsTypes) {
+import s from './Characteristics.module.scss'
+
+export function Characteristics({ Characteristics }: CharacteristicsTypes) {
   return (
     <>
-      <Characteristic Characteristics={Characteristics} />
-      <AboutProduct About={About} />
+      <div className={s.characteristics}>
+        <Title
+          className={s.title}
+          size="md-20"
+        >
+          Основные характеристики
+        </Title>
+        <Characteristic Characteristics={Characteristics} />
+      </div>
     </>
   )
 }

@@ -1,5 +1,6 @@
 import { Data } from 'pages/home/api'
 
+import { AboutProduct } from 'widgets/about-product'
 import { Characteristics } from 'widgets/characteristic'
 import { ProductDetails } from 'widgets/product-details'
 import { ProductList } from 'widgets/product-list'
@@ -31,14 +32,10 @@ export function ProductPage() {
 
       <Space h={60} />
 
-      <Characteristics
-        Characteristics={ProductIdData.Characteristics}
-        About={ProductIdData.About}
-      />
+      <Characteristics Characteristics={ProductIdData.Characteristics} />
 
-      <Space h={60} />
+      <AboutProduct About={ProductIdData.About} />
 
-      {/* <Reviews data={CommentData} /> */}
       <Reviews data={CommentData} />
 
       <ProductList
