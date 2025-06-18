@@ -1,0 +1,23 @@
+.container {
+  max-width: 200px;
+  width: 100%;
+  display: grid;
+  gap: 25px;
+  padding-top: 30px;
+
+  a {
+    img {
+      width: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    a {
+      font-size: 14px;
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
