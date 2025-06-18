@@ -1,5 +1,24 @@
+import { BurgerMenu } from 'features/burger-menu'
+import { PersonalNavigation } from 'features/personal-navigation'
+import { Search } from 'features/search'
+
+import logo from 'shared/assets/logo.svg'
+
 import s from './Header.module.scss'
 
 export function Header() {
-  return <div className={s.container}>Header</div>
+  return (
+    <header className={s.container}>
+      <img
+        src={logo}
+        alt="logo"
+      />
+
+      <Search />
+
+      <PersonalNavigation />
+
+      <BurgerMenu />
+    </header>
+  )
 }

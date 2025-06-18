@@ -3,10 +3,10 @@ import { clsx } from 'clsx'
 import s from './Input.module.scss'
 
 interface Props {
-  isError: boolean
-  className: string
-  rightIcon: boolean
-  onRightClick: () => void
+  isError?: boolean
+  className?: string
+  rightIcon?: boolean | string
+  onRightClick?: () => void
 }
 
 export const Input = ({
@@ -32,7 +32,7 @@ export const Input = ({
         className={s.iconRight}
         onClick={onRightClick}
       >
-        {rightIcon}
+        {typeof rightIcon === 'string' ? <img src={rightIcon} /> : rightIcon}
       </span>
     )}
   </div>

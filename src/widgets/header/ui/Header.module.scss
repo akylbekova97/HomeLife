@@ -1,0 +1,19 @@
+// .header {
+.container {
+  max-width: 1252px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  gap: 25px;
+}
+// }

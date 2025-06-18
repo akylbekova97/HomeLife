@@ -11,7 +11,7 @@ interface Props {
   size?: 'sm-16' | ''
   type?: 'medium' | 'bold' | 'regular'
   color?: 'blue' | ''
-  link?: string | ''
+  to?: string | ''
   onClick?: (e: MouseEvent<HTMLAnchorElement>) => void
 }
 
@@ -21,12 +21,12 @@ export function AppLink({
   size = '',
   type = 'regular',
   color = '',
-  link = '',
+  to = '',
   onClick,
 }: Props) {
   return (
     <Link
-      to={link}
+      to={to}
       onClick={onClick}
       className={clsx(s.link, s[size], s[type], s[color], className)}
     >

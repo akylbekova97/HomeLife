@@ -23,6 +23,7 @@ export function Home() {
   return (
     <>
       <ProductDay />
+      <Space h={50} />
 
       <section className={s.products}>
         <ProductList
