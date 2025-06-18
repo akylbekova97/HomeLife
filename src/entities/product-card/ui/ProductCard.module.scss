@@ -44,7 +44,6 @@
     }
     .content {
       .title {
-        min-height: 50px;
         font-size: 12px;
         margin: 10px 0 0 0;
       }
@@ -69,7 +68,9 @@
       text-align: center;
 
       .title {
+        min-height: 30px;
         font-size: 12px;
+        padding-bottom: 8px;
       }
       .price {
         flex-direction: column;

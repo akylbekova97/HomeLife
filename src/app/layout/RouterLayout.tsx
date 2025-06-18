@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
 
+import { Footer } from 'widgets/footer'
 import { Header } from 'widgets/header'
 
 import { Space } from 'shared/ui/Space/Space'
@@ -10,12 +11,15 @@ export function RouterLayout() {
   return (
     <>
       <Header />
-      <Space h={50} />
+      <Space h={30} />
+
       <main className="container">
         <Outlet />
       </main>
+
       <Space h={90} />
-      {/* тут footer */}
+      <Footer />
+      <Space h={80} />
     </>
   )
 }
