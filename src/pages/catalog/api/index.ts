@@ -1,0 +1,133 @@
+export const BaseData = [
+  {
+    id: '1',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s',
+    title: 'Пылесос Tefal RF-1300',
+    price: '10000',
+    productRating: 4.5,
+    oldPrice: '30000',
+    promotion: '-10%',
+  },
+  {
+    id: '2',
+    img: 'https://thumbs.dreamstime.com/b/falling-drop-rain-blue-earth-image-water-splash-crown-shape-water-splash-crown-shape-falling-drop-earth-140453719.jpg',
+    title: 'Пылесос Samsung Gf-1500',
+    price: '7000',
+    productRating: 4.0,
+  },
+  {
+    id: '3',
+    img: 'https://raw.githubusercontent.com/Codecademy/docs/main/media/bird-thumbnail.jpg',
+    title: 'Пылесос Tefal Ultra',
+    price: '3000',
+    productRating: 4.7,
+    oldPrice: '4000',
+    promotion: '-10%',
+  },
+  {
+    id: '4',
+    img: 'https://raw.githubusercontent.com/Codecademy/docs/main/media/bird-thumbnail.jpg',
+    title: 'Пылесос LG 400',
+    price: '4000',
+    productRating: 4.6,
+  },
+  {
+    id: '5',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s',
+    title: 'Пылесос LG WR-U1300',
+    price: '5000',
+    productRating: 4.5,
+  },
+  {
+    id: '6',
+    img: 'https://thumbs.dreamstime.com/b/falling-drop-rain-blue-earth-image-water-splash-crown-shape-water-splash-crown-shape-falling-drop-earth-140453719.jpg',
+    title: 'Пылесос Tefal Mini',
+    price: '1300',
+    productRating: 4.0,
+  },
+  {
+    id: '7',
+    img: 'https://raw.githubusercontent.com/Codecademy/docs/main/media/bird-thumbnail.jpg',
+    title: 'Пылесос Samsung Star',
+    price: '8000',
+    productRating: 4.7,
+  },
+  {
+    id: '8',
+    img: 'https://raw.githubusercontent.com/Codecademy/docs/main/media/bird-thumbnail.jpg',
+    title: 'Пылесос Tefal Ultra',
+    price: '28990',
+    productRating: 4.6,
+  },
+  {
+    id: '9',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s',
+    title: 'Пылесос Tefal RF-1300',
+    price: '10000',
+    productRating: 4.5,
+    oldPrice: '20000',
+    promotion: '-30%',
+  },
+  {
+    id: '10',
+    img: 'https://thumbs.dreamstime.com/b/falling-drop-rain-blue-earth-image-water-splash-crown-shape-water-splash-crown-shape-falling-drop-earth-140453719.jpg',
+    title: 'Пылесос Samsung Gf-1500',
+    price: '7000',
+    productRating: 4.0,
+  },
+  {
+    id: '11',
+    img: 'https://raw.githubusercontent.com/Codecademy/docs/main/media/bird-thumbnail.jpg',
+    title: 'Пылесос Tefal Ultra',
+    price: '3000',
+    productRating: 4.7,
+  },
+  {
+    id: '12',
+    img: 'https://raw.githubusercontent.com/Codecademy/docs/main/media/bird-thumbnail.jpg',
+    title: 'Пылесос LG 400',
+    price: '4000',
+    productRating: 4.6,
+  },
+  {
+    id: '13',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s',
+    title: 'Пылесос LG WR-U1300',
+    price: '5000',
+    productRating: 4.5,
+  },
+  {
+    id: '14',
+    img: 'https://thumbs.dreamstime.com/b/falling-drop-rain-blue-earth-image-water-splash-crown-shape-water-splash-crown-shape-falling-drop-earth-140453719.jpg',
+    title: 'Пылесос Tefal Mini',
+    price: '1300',
+    productRating: 4.0,
+  },
+  {
+    id: '15',
+    img: 'https://raw.githubusercontent.com/Codecademy/docs/main/media/bird-thumbnail.jpg',
+    title: 'Пылесос LG 400',
+    price: '4000',
+    productRating: 4.2,
+  },
+]
+
+export const DataBrand = [
+  { id: '1', value: 'Samsung' },
+  { id: '2', value: 'Tefal' },
+  { id: '3', value: 'LG' },
+  { id: '4', value: 'Philips' },
+  { id: '5', value: 'Bosch' },
+]
+
+export const DataType = [
+  { id: '1', value: 'Стандартный' },
+  { id: '2', value: 'Мощный' },
+  { id: '3', value: 'Хозяйственный' },
+]
+export const DataPower = [
+  { id: '1', value: 'до 500' },
+  { id: '2', value: 'от 500 до 1000' },
+  { id: '4', value: 'от 1000 до 2000' },
+  { id: '3', value: 'от 2000 более' },
+]
