@@ -1,13 +1,23 @@
 import { useState } from 'react'
 
-import { AppLink } from '../../../AppLink'
-import { Text } from '../../../Text'
-import { Input } from '../../../input/ui/Input'
-import { Checkbox } from '../Checkbox/Checkbox'
+import { AppLink } from 'shared/ui/AppLink/AppLink'
+import { Input } from 'shared/ui/Input/Input'
+import { Text } from 'shared/ui/Text'
+import { Checkbox } from 'shared/ui/Сheckbox/Checkbox'
 
 import s from './FilterComponent.module.scss'
 
-export function FilterComponent({ title, data }) {
+interface FilterDataTypes {
+  id: string
+  value: string
+}
+
+interface Props {
+  title: string
+  data?: FilterDataTypes[]
+}
+
+export function FilterComponent({ title, data }: Props) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -34,7 +44,7 @@ export function FilterComponent({ title, data }) {
             </div>
           ) : (
             <>
-              {data.map((el, id) => (
+              {data?.map((el, id) => (
                 <div
                   className={s.text}
                   key={id}

@@ -1,0 +1,20 @@
+.container {
+  max-width: 1252px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  gap: 40px;
+
+  .products {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px;
+  }
+}
