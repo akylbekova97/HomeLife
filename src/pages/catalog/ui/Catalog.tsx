@@ -7,15 +7,16 @@ import s from './Catalog.module.scss'
 
 export function Catalog() {
   return (
-    <section className={s.container}>
+    <div className={s.container}>
       <CatalogFilter
         DataBrand={DataBrand}
         DataType={DataType}
         DataPower={DataPower}
       />
+
       <div className={s.products}>
         <ProductList data={BaseData} />
       </div>
-    </section>
+    </div>
   )
 }

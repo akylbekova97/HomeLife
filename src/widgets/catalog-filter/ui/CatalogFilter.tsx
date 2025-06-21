@@ -17,7 +17,7 @@ interface Props {
 
 export function CatalogFilter({ DataBrand, DataType, DataPower }: Props) {
   return (
-    <div className={s.filter}>
+    <section className={s.filter}>
       <FilterComponent
         title={'Бренд'}
         data={DataBrand}
@@ -33,6 +33,6 @@ export function CatalogFilter({ DataBrand, DataType, DataPower }: Props) {
       />
       <AppButton variant="button">Подобрать</AppButton>
       <AppButton variant="border">Сбросить</AppButton>
-    </div>
+    </section>
   )
 }

@@ -1,5 +1,6 @@
 import type { ProductTypes } from 'shared/types/ProductTypes'
 import { AppButton } from 'shared/ui/AppButton/AppButton'
+import { AppLink } from 'shared/ui/AppLink/AppLink'
 import { Price } from 'shared/ui/Price/Price'
 import { Rating } from 'shared/ui/Rating/Rating'
 import { Title } from 'shared/ui/Text/ui/Title/Title'
@@ -37,12 +38,14 @@ export function ProductCard({ data }: ProductCardTypes) {
           promotion={promotion}
         />
 
-        <AppButton
-          variant="button"
-          className={s.btn}
-        >
-          Купить
-        </AppButton>
+        <AppLink to="/catalog/id">
+          <AppButton
+            variant="button"
+            className={s.btn}
+          >
+            Купить
+          </AppButton>
+        </AppLink>
       </div>
     </div>
   )

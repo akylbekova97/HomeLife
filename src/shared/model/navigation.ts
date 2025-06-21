@@ -4,6 +4,7 @@ export const ROUTES = {
   Home: '/',
   Catalog: '/catalog',
   CatalogItem: 'catalog/:id',
+  Basket: 'basket',
 
   // Admin routes
   // Admin: '/admin',

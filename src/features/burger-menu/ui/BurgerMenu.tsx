@@ -42,7 +42,8 @@ export const BurgerMenu = () => {
 
         <AppLink
           type="bold"
-          to="#"
+          to="basket"
+          onClick={toggleMenu}
         >
           Корзина
         </AppLink>

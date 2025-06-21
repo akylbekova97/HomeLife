@@ -25,7 +25,7 @@ export function Home() {
       <ProductDay />
       <Space h={50} />
 
-      <section className={s.products}>
+      <div className={s.products}>
         <ProductList
           title="Новинки"
           data={Data}
@@ -46,7 +46,7 @@ export function Home() {
         />
 
         <Space h={70} />
-      </section>
+      </div>
     </>
   )
 }
