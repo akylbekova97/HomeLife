@@ -30,7 +30,7 @@ export function AddComment() {
 
         <AppLink
           color={'blue'}
-          link={'reviews'}
+          to={'reviews'}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <b>⨉</b> : 'Написать отзыв'}

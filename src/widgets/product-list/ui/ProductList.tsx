@@ -7,7 +7,7 @@ import s from './ProductList.module.scss'
 
 export function ProductList({ title, data }: ProductList) {
   return (
-    <div className={s.container}>
+    <section className={s.container}>
       <Title
         className={s.title}
         size="lg-30"
@@ -22,6 +22,6 @@ export function ProductList({ title, data }: ProductList) {
           />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

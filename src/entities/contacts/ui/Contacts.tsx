@@ -7,7 +7,10 @@ import s from './Contacts.module.scss'
 export function Contacts() {
   return (
     <div className={s.container}>
-      <AppLink size="sm-16">
+      <AppLink
+        to="#"
+        size="sm-16"
+      >
         <img
           src={WhatsApp}
           alt="WhatsApp"
@@ -15,14 +18,24 @@ export function Contacts() {
         0500743440 <br />
         0770161681
       </AppLink>
-      <AppLink size="sm-16">
+
+      <AppLink
+        to="#"
+        size="sm-16"
+      >
         <img
           src={Telegram}
           alt="Telegram"
         />
         0771743440
       </AppLink>
-      <AppLink size="sm-16">Abdivaliev.2017@gmail.com</AppLink>
+
+      <AppLink
+        to="#"
+        size="sm-16"
+      >
+        Abdivaliev.2017@gmail.com
+      </AppLink>
     </div>
   )
 }

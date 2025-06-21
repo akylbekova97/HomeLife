@@ -10,6 +10,7 @@ import { ROUTES } from 'shared/model/navigation'
 const Home = lazy(() => import('pages/home'))
 const Catalog = lazy(() => import('pages/catalog'))
 const ProductPage = lazy(() => import('pages/product-page'))
+const Basket = lazy(() => import('pages/basket'))
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
         element: <ProductPage />,
         children: [{ path: `reviews`, element: <CommentForm /> }],
       },
+      { path: ROUTES.Basket, element: <Basket /> },
     ],
   },
 ])
