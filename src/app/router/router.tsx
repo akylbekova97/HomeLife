@@ -3,6 +3,8 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import { RouterLayout } from 'app/layout/RouterLayout'
 
+import { ErrorScreen } from 'widgets/error-screen'
+
 import { CommentForm } from 'features/commet-form'
 
 import { ROUTES } from 'shared/model/navigation'
@@ -29,4 +31,5 @@ export const router = createBrowserRouter([
       { path: ROUTES.Order, element: <Order /> },
     ],
   },
+  { path: '*', element: <ErrorScreen /> },
 ])
