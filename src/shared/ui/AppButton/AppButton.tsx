@@ -6,7 +6,7 @@ import s from './AppButton.module.scss'
 
 export interface Props {
   children: ReactNode
-  variant?: 'border' | 'button'
+  variant: 'border' | 'button'
   className?: string
   type?: 'button' | 'submit' | 'reset'
   onClick?: () => void

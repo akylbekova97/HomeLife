@@ -11,6 +11,7 @@ const Home = lazy(() => import('pages/home'))
 const Catalog = lazy(() => import('pages/catalog'))
 const ProductPage = lazy(() => import('pages/product-page'))
 const Basket = lazy(() => import('pages/basket'))
+const Order = lazy(() => import('pages/order'))
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
         children: [{ path: `reviews`, element: <CommentForm /> }],
       },
       { path: ROUTES.Basket, element: <Basket /> },
+      { path: ROUTES.Order, element: <Order /> },
     ],
   },
 ])

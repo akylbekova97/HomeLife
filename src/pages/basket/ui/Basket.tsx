@@ -14,7 +14,7 @@ export function Basket() {
       <Title>Просмотр корзины</Title>
       <div className={s.flex}>
         <BasketList data={basketData} />
-        <OrderSummary />
+        <OrderSummary link="/order" />
       </div>
     </div>
   )
