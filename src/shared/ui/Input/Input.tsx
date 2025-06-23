@@ -1,5 +1,7 @@
 import { clsx } from 'clsx'
 
+import type { ChangeEvent } from 'react'
+
 import s from './Input.module.scss'
 
 interface Props {
@@ -9,6 +11,8 @@ interface Props {
   type?: string
   rightIcon?: boolean | string
   onRightClick?: () => void
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void
+  value: string
 }
 
 export const Input = ({
@@ -17,12 +21,16 @@ export const Input = ({
   rightIcon,
   placeholder,
   type,
+  value,
   onRightClick,
+  onChange,
 }: Props) => (
   <div className={clsx(s.wrapper)}>
     <input
+      value={value}
       placeholder={placeholder}
       type={type}
+      onChange={onChange}
       className={clsx(
         s.input,
         rightIcon && s.hasRightIcon,
@@ -36,7 +44,14 @@ export const Input = ({
         className={s.iconRight}
         onClick={onRightClick}
       >
-        {typeof rightIcon === 'string' ? <img src={rightIcon} /> : rightIcon}
+        {typeof rightIcon === 'string' ? (
+          <img
+            src={rightIcon}
+            alt="icon"
+          />
+        ) : (
+          rightIcon
+        )}
       </span>
     )}
   </div>

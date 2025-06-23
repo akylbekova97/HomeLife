@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  .content {
+    display: grid;
+    gap: 15px;
+    max-width: 700px;
+    width: 100%;
+
+    label {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .sum {
+    max-width: 400px;
+    width: 100%;
+    display: grid;
+    height: 140px;
+    padding: 20px;
+    gap: 20px;
+
+    box-sizing: border-box;
+    border: 0.5px solid rgb(210, 210, 209);
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}

@@ -1,11 +1,13 @@
 b {
   display: none;
+  cursor: pointer;
   @media (max-width: 768px) {
     display: block;
     text-align: end;
     margin-bottom: -20px;
   }
 }
+
 .container {
   width: 100%;
   padding: 20px;
@@ -47,6 +49,7 @@ b {
     height: auto;
     img {
       max-width: 100px;
+      height: 130px;
     }
     b {
       display: none;

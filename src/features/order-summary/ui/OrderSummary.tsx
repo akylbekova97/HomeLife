@@ -1,15 +1,20 @@
+import { useNavigate } from 'react-router-dom'
+
 import { basketData } from 'pages/basket/api'
+
+import { TotalAmount } from 'features/total-amount'
 
 import { AppButton } from 'shared/ui/AppButton/AppButton'
 import { Text, Title } from 'shared/ui/Text'
 
 import s from './OrderSummary.module.scss'
 
-export function OrderSummary() {
-  const totalPrice = basketData.reduce((acc, item) => {
-    const price = parseInt(item.price, 10) || 0
-    return acc + price
-  }, 0)
+interface Props {
+  link?: string
+}
+
+export function OrderSummary({ link }: Props) {
+  const navigate = useNavigate()
 
   return (
     <div className={s.container}>
@@ -18,9 +23,15 @@ export function OrderSummary() {
 
       <hr />
 
-      <Title size="sm-18">Итого: {totalPrice.toLocaleString()} сом</Title>
+      <TotalAmount />
 
-      <AppButton variant="button">Подтвердить заказа</AppButton>
+      <AppButton
+        type="submit"
+        onClick={() => link && navigate(link)}
+        variant="button"
+      >
+        Подтвердить заказа
+      </AppButton>
     </div>
   )
 }
