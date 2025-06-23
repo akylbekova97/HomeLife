@@ -1,0 +1,18 @@
+.container {
+  max-width: 1252px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 200px 20px 0 20px;
+
+  text-align: center;
+  display: grid;
+  gap: 35px;
+  align-items: center;
+
+  a {
+    button {
+      padding: 15px 20px;
+    }
+    margin: 0 auto;
+  }
+}
