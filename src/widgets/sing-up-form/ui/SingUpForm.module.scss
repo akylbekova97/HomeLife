@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  display: grid;
+  gap: 25px;
+
+  .checkbox {
+    display: flex;
+    gap: 10px;
+    input {
+      width: 20px;
+    }
+  }
+
+  button {
+    margin-top: 27px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 10px;
+    button {
+      margin: 10px 0 18px 0;
+    }
+  }
+}

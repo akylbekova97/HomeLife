@@ -7,9 +7,9 @@ export function PersonalNavigation() {
   return (
     <nav className={s.container}>
       <AppLink to="/">Главная</AppLink>
-      <AppLink to="catalog">Продукты</AppLink>
-      <AppLink to="basket">Корзина</AppLink>
-      <AppLink to="#">
+      <AppLink to="/catalog">Продукты</AppLink>
+      <AppLink to="/basket">Корзина</AppLink>
+      <AppLink to="/sing-up">
         <AppButton variant="button">Зарегистрироваться</AppButton>{' '}
       </AppLink>
     </nav>
