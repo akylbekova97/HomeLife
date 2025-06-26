@@ -14,6 +14,8 @@ const Catalog = lazy(() => import('pages/catalog'))
 const ProductPage = lazy(() => import('pages/product-page'))
 const Basket = lazy(() => import('pages/basket'))
 const Order = lazy(() => import('pages/order'))
+const SingIn = lazy(() => import('pages/sing-in'))
+const SingUp = lazy(() => import('pages/sing-up'))
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +31,8 @@ export const router = createBrowserRouter([
       },
       { path: ROUTES.Basket, element: <Basket /> },
       { path: ROUTES.Order, element: <Order /> },
+      { path: ROUTES.SingIn, element: <SingIn /> },
+      { path: ROUTES.SingUp, element: <SingUp /> },
     ],
   },
   { path: '*', element: <ErrorScreen /> },

@@ -27,6 +27,7 @@ export function Order() {
       <Modal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
+        resetButton={true}
       >
         <Title size="sm-18">Ваш заказ успешно оформлен! ✅</Title>
       </Modal>

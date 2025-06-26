@@ -34,7 +34,7 @@ export const BurgerMenu = () => {
 
         <AppLink
           type="bold"
-          to="catalog"
+          to="/catalog"
           onClick={toggleMenu}
         >
           Продукты
@@ -42,10 +42,18 @@ export const BurgerMenu = () => {
 
         <AppLink
           type="bold"
-          to="basket"
+          to="/basket"
           onClick={toggleMenu}
         >
           Корзина
+        </AppLink>
+
+        <AppLink
+          type="bold"
+          to="/sing-up"
+          onClick={toggleMenu}
+        >
+          Войти
         </AppLink>
       </nav>
     </>

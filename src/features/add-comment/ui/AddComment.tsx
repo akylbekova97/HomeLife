@@ -7,13 +7,19 @@ import { Title } from 'shared/ui/Text'
 
 import s from './AddComment.module.scss'
 
+interface data {
+  rating: number
+  reviewText: string
+}
+
 export function AddComment() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (formData: data) => {
     {
       try {
         // await ... (formData).unwrap()
+        console.log(formData)
         setIsOpen((prev) => !prev)
       } catch (error) {
         console.log(error)
