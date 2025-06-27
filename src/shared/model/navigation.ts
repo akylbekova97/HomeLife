@@ -10,7 +10,7 @@ export const ROUTES = {
   SingUp: '/sing-up',
 
   // Admin routes
-  // Admin: '/admin',
+  Admin: '/admin',
 } as const
 
 export type routes = (typeof ROUTES)[keyof typeof ROUTES]

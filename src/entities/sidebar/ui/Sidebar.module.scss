@@ -1,0 +1,20 @@
+.content {
+  width: 100%;
+  padding: 15px 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: rgb(75, 72, 72);
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
