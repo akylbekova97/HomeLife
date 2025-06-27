@@ -1,6 +1,7 @@
 import { lazy } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 
+import { AdminLayout } from 'app/layout/AdminLayout'
 import { RouterLayout } from 'app/layout/RouterLayout'
 
 import { ErrorScreen } from 'widgets/error-screen'
@@ -16,6 +17,7 @@ const Basket = lazy(() => import('pages/basket'))
 const Order = lazy(() => import('pages/order'))
 const SingIn = lazy(() => import('pages/sing-in'))
 const SingUp = lazy(() => import('pages/sing-up'))
+const Admin = lazy(() => import('pages/admin'))
 
 export const router = createBrowserRouter([
   {
@@ -35,5 +37,12 @@ export const router = createBrowserRouter([
       { path: ROUTES.SingUp, element: <SingUp /> },
     ],
   },
+
+  {
+    path: ROUTES.Admin,
+    element: <AdminLayout />,
+    children: [{ path: ROUTES.Admin, element: <Admin /> }],
+  },
+
   { path: '*', element: <ErrorScreen /> },
 ])
