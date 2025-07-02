@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  padding: 20px 0;
+  img {
+    padding-top: 20px;
+    animation: floatUpDown 3s ease-in-out infinite;
+    width: 200px;
+  }
+  i {
+    padding-top: 10px;
+    display: block;
+  }
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

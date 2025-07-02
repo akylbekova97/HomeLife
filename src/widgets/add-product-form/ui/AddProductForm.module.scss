@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 30px;
+
+  button {
+    width: 100%;
+  }
+}

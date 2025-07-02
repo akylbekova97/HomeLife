@@ -14,31 +14,31 @@ export function AdminSidebar() {
       <hr />
 
       <Sidebar
-        to="/add-product"
+        to="/admin/add-product"
         label="Добавить товар"
         icon={addProductIcon}
       />
 
       <Sidebar
-        to="/add-promotion"
+        to="/admin/add-promotion"
         label="Добавить акции"
         icon={promotionIcon}
       />
 
       <Sidebar
-        to="/aplications"
+        to="/admin/aplications"
         label="Заявки"
         icon={applicationIcon}
       />
 
       <Sidebar
-        to="/products"
+        to="/admin/products"
         label="Все товары"
         icon={addProductIcon}
       />
 
       <Sidebar
-        to="/promotions"
+        to="/admin/promotions"
         label="Все акции"
         icon={addProductIcon}
       />

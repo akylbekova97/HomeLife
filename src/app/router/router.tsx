@@ -17,6 +17,7 @@ const Basket = lazy(() => import('pages/basket'))
 const Order = lazy(() => import('pages/order'))
 const SingIn = lazy(() => import('pages/sing-in'))
 const SingUp = lazy(() => import('pages/sing-up'))
+const AddProduct = lazy(() => import('pages/add-product'))
 const Admin = lazy(() => import('pages/admin'))
 
 export const router = createBrowserRouter([
@@ -41,7 +42,10 @@ export const router = createBrowserRouter([
   {
     path: ROUTES.Admin,
     element: <AdminLayout />,
-    children: [{ path: ROUTES.Admin, element: <Admin /> }],
+    children: [
+      { path: ROUTES.Admin, element: <Admin /> },
+      { path: ROUTES.AddProduct, element: <AddProduct /> },
+    ],
   },
 
   { path: '*', element: <ErrorScreen /> },
