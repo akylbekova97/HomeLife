@@ -11,6 +11,11 @@ export const ROUTES = {
 
   // Admin routes
   Admin: '/admin',
+  AddProduct: 'add-product',
+  AddPromotion: 'add-promotion',
+  Aplications: 'aplications',
+  Products: 'products',
+  Promotions: 'promotions',
 } as const
 
 export type routes = (typeof ROUTES)[keyof typeof ROUTES]

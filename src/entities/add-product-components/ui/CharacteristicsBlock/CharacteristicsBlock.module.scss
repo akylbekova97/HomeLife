@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+
+  .inputs {
+    padding: 9px 0;
+    display: flex;
+    gap: 5px;
+    input {
+      margin: 5px 0;
+    }
+  }
+}

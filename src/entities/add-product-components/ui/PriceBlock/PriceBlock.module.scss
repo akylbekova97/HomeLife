@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  // text-align: end;
+  i {
+    font-size: 16px;
+    color: rgb(3, 58, 160);
+    cursor: pointer;
+  }
+
+  .inputs {
+    input {
+      margin: 5px 0;
+    }
+  }
+}

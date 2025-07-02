@@ -1,3 +1,3 @@
-import { Admin } from './ui/Adimin'
+import { Admin } from './ui/Admin'
 
 export default Admin

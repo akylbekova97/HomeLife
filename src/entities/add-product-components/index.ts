@@ -1,0 +1,5 @@
+export { AboutBlock } from './ui/AboutBlock/AboutBlock'
+export { CharacteristicsBlock } from './ui/CharacteristicsBlock/CharacteristicsBlock'
+export { ColorPicker } from './ui/ColorPicker/ColorPicker'
+export { ImageUpload } from './ui/ImageUpload/ImageUpload'
+export { PriceBlock } from './ui/PriceBlock/PriceBlock'
