@@ -1,11 +1,14 @@
+import clsx from 'clsx'
+
 import s from './ImageUpload.module.scss'
 
 interface Props {
   img: string
   onChange: (imgBase64: string) => void
+  isError: boolean
 }
 
-export function ImageUpload({ img, onChange }: Props) {
+export function ImageUpload({ img, onChange, isError }: Props) {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
     if (file) {
@@ -18,7 +21,7 @@ export function ImageUpload({ img, onChange }: Props) {
   }
 
   return (
-    <div className={s.container}>
+    <div className={clsx(s.container, isError && s.error)}>
       <label>
         {img ? (
           <>

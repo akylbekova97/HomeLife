@@ -8,6 +8,14 @@
 
   font-size: 14px;
 
+  &.error {
+    // background: var(--pink);
+    // border: solid 1px var(--red);
+    border: 1px solid red;
+
+    color: red;
+  }
+
   &.hasRightIcon {
     padding-right: 40px;
   }
