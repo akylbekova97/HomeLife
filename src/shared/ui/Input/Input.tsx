@@ -13,6 +13,7 @@ interface Props {
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void
   value?: string | number
   checked?: boolean
+  isError?: boolean
 }
 
 export const InputComponent = ({
@@ -23,6 +24,7 @@ export const InputComponent = ({
   value,
   onRightClick,
   onChange,
+  isError,
 }: Props) => (
   <>
     <input
@@ -30,7 +32,12 @@ export const InputComponent = ({
       placeholder={placeholder}
       type={type}
       onChange={onChange}
-      className={clsx(s.input, rightIcon && s.hasRightIcon, className)}
+      className={clsx(
+        s.input,
+        rightIcon && s.hasRightIcon,
+        isError && s.error,
+        className,
+      )}
     />
 
     {rightIcon && (

@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+
 import { useState } from 'react'
 
 import s from './CustomSelect.module.scss'
@@ -6,10 +8,11 @@ interface Props {
   data: string[]
   label: string
   value: string | null
+  isError: boolean
   onChange: (value: string) => void
 }
 
-export function CustomSelect({ data, label, value, onChange }: Props) {
+export function CustomSelect({ data, label, value, onChange, isError }: Props) {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleSelect = (el: string) => {
@@ -18,7 +21,7 @@ export function CustomSelect({ data, label, value, onChange }: Props) {
   }
 
   return (
-    <div className={s.container}>
+    <div className={clsx(s.container, isError && s.error)}>
       <div
         className={s.selectHeader}
         onClick={() => setIsOpen((prev) => !prev)}

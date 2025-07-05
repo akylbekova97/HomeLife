@@ -10,6 +10,7 @@ interface Props {
   onPriceChange: (value: string) => void
   onOldPriceChange: (value: string) => void
   onTogglePromotion: () => void
+  isError: boolean
 }
 
 export function PriceBlock({
@@ -19,12 +20,14 @@ export function PriceBlock({
   onPriceChange,
   onOldPriceChange,
   onTogglePromotion,
+  isError,
 }: Props) {
   return (
     <div className={s.container}>
       {!promotion ? (
         <>
           <Input
+            isError={isError}
             value={price}
             onChange={(e) => onPriceChange(e.target.value)}
             type="number"
@@ -46,6 +49,7 @@ export function PriceBlock({
             onChange={(e) => onPriceChange(e.target.value)}
             placeholder="новая цена"
             type="number"
+            isError={isError}
           />
         </div>
       )}

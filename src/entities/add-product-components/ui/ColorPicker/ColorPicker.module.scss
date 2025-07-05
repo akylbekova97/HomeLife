@@ -6,4 +6,9 @@
     padding: 2px 3px;
     margin: 5px 3px;
   }
+
+  &.error {
+    border: 1px solid red;
+    color: red;
+  }
 }

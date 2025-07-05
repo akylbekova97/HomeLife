@@ -1,13 +1,16 @@
+import clsx from 'clsx'
+
 import { AppButton } from 'shared/ui/AppButton/AppButton'
 
 import s from './ColorPicker.module.scss'
 
 interface Props {
+  isError: boolean
   colors: string[]
   onChange: (colors: string[]) => void
 }
 
-export function ColorPicker({ colors, onChange }: Props) {
+export function ColorPicker({ colors, onChange, isError }: Props) {
   const handleColorChange = (index: number, value: string) => {
     const updated = [...colors]
     updated[index] = value
@@ -15,7 +18,7 @@ export function ColorPicker({ colors, onChange }: Props) {
   }
 
   return (
-    <div className={s.container}>
+    <div className={clsx(s.container, isError && s.error)}>
       <AppButton
         variant="border"
         type="button"

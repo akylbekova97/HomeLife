@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+
 import { AppButton } from 'shared/ui/AppButton/AppButton'
 import { Input } from 'shared/ui/Input/Input'
 
@@ -11,9 +13,14 @@ interface Characteristic {
 interface Props {
   characteristics: Characteristic[]
   onChange: (updated: Characteristic[]) => void
+  isError: boolean
 }
 
-export function CharacteristicsBlock({ characteristics, onChange }: Props) {
+export function CharacteristicsBlock({
+  characteristics,
+  onChange,
+  isError,
+}: Props) {
   const updateItem = (index: number, key: 'title' | 'value', value: string) => {
     const updated = [...characteristics]
     updated[index][key] = value
@@ -21,7 +28,7 @@ export function CharacteristicsBlock({ characteristics, onChange }: Props) {
   }
 
   return (
-    <div className={s.container}>
+    <div className={clsx(s.container, isError && s.error)}>
       {characteristics.map((el, index) => (
         <div
           className={s.inputs}

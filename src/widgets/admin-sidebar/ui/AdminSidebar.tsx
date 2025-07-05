@@ -2,6 +2,7 @@ import { Sidebar } from 'entities/sidebar'
 
 import addProductIcon from 'shared/assets/icons/addProductIcon.svg'
 import applicationIcon from 'shared/assets/icons/aplicatinonsIcon.svg'
+import categoryIcon from 'shared/assets/icons/categoryIcon.png'
 import promotionIcon from 'shared/assets/icons/promotionIcon.svg'
 import { Title } from 'shared/ui/Text'
 
@@ -20,9 +21,15 @@ export function AdminSidebar() {
       />
 
       <Sidebar
-        to="/admin/add-promotion"
-        label="Добавить акции"
+        to="/admin/add-brand"
+        label="Добавить бренд"
         icon={promotionIcon}
+      />
+
+      <Sidebar
+        to="/admin/add-categories"
+        label="Добавить категории"
+        icon={categoryIcon}
       />
 
       <Sidebar

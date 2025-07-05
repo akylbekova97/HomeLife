@@ -9,7 +9,7 @@ export function ErrorScreen() {
     <div className={s.container}>
       <Title size="xl-36">Ошибка 404</Title>
       <Text>
-        Возможно, запрошенная страница временно недоступона или удалена
+        Возможно, запрошенная страница временно недоступно или удалена
       </Text>
       <AppLink to="/">
         <AppButton variant="button">Перейти на главную</AppButton>
