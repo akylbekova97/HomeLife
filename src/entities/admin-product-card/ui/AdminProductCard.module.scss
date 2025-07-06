@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  border: 1px solid rebeccapurple;
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  img {
+    max-width: 80px;
+    width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+
+  .title {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .price {
+    max-width: 80px;
+    width: 100%;
+    p {
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  .colors {
+    padding-top: 25px;
+    div {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    max-width: 200px;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .colors {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}

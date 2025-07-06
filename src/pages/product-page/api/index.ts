@@ -6,7 +6,7 @@ export const ProductIdData = {
   title: 'Стиральная машина Beko WRE6511BWW',
   price: '20490',
   productRating: 4.5,
-  color: ['black', 'white', 'rgb(0, 177, 177)'],
+  color: ['(883, 107, 907)', '(344, 770, 7)', '(0, 177, 177)'],
   count: 1,
   oldPrice: '30000',
   promotion: '-10%',

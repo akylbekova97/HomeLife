@@ -39,7 +39,7 @@ export function AdminSidebar() {
       />
 
       <Sidebar
-        to="/admin/products"
+        to="/admin/all-products"
         label="Все товары"
         icon={addProductIcon}
       />

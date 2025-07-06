@@ -1,5 +1,6 @@
 import type { ProductDescriptionTypes } from 'shared/types/ProductDescriptionTypes'
 import { AppButton } from 'shared/ui/AppButton/AppButton'
+import { Color } from 'shared/ui/Color/Color'
 import { Counter } from 'shared/ui/Counter/Counter'
 import { Price } from 'shared/ui/Price/Price'
 import { Rating } from 'shared/ui/Rating/Rating'
@@ -26,14 +27,7 @@ export function ProductDescription({ data }: ProductDescriptionTypes) {
       <Space h={15} />
 
       <Title size="sm-16">Цвет</Title>
-      <div className={s.color}>
-        {color?.map((el, ind) => (
-          <div
-            key={ind}
-            style={{ background: `${el}` }}
-          />
-        ))}
-      </div>
+      <Color color={color} />
 
       <Price
         className={s.price}
