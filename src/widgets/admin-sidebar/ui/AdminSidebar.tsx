@@ -33,21 +33,15 @@ export function AdminSidebar() {
       />
 
       <Sidebar
-        to="/admin/aplications"
-        label="Заявки"
-        icon={applicationIcon}
-      />
-
-      <Sidebar
         to="/admin/all-products"
         label="Все товары"
         icon={addProductIcon}
       />
 
       <Sidebar
-        to="/admin/promotions"
-        label="Все акции"
-        icon={addProductIcon}
+        to="/admin/applications"
+        label="Заявки"
+        icon={applicationIcon}
       />
     </div>
   )

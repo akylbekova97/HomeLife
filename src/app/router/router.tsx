@@ -22,6 +22,7 @@ const AddProduct = lazy(() => import('pages/add-product'))
 const AddBrand = lazy(() => import('pages/add-brand-product'))
 const AddCategories = lazy(() => import('pages/add-categories-product'))
 const AllProducts = lazy(() => import('pages/all-products-admin'))
+const Applications = lazy(() => import('pages/applications'))
 
 export const router = createBrowserRouter([
   {
@@ -51,6 +52,7 @@ export const router = createBrowserRouter([
       { path: ROUTES.AddBrand, element: <AddBrand /> },
       { path: ROUTES.AddCategories, element: <AddCategories /> },
       { path: ROUTES.AllProducts, element: <AllProducts /> },
+      { path: ROUTES.Applications, element: <Applications /> },
     ],
   },
 
