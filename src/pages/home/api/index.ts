@@ -4,6 +4,7 @@ export const Data = [
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s',
     title: 'Пылесос Tefal Bagless jk kjk jk j kjkjkjkj kjk jk',
     price: '20490',
+    oldPrice: '22',
     productRating: 4.5,
   },
   {

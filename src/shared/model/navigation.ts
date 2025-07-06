@@ -14,7 +14,7 @@ export const ROUTES = {
   AddProduct: 'add-product',
   AddBrand: 'add-brand',
   AddCategories: 'add-categories',
-  Products: 'products',
+  AllProducts: 'all-products',
   Promotions: 'promotions',
 } as const
 
