@@ -15,7 +15,7 @@ export const ROUTES = {
   AddBrand: 'add-brand',
   AddCategories: 'add-categories',
   AllProducts: 'all-products',
-  Promotions: 'promotions',
+  Applications: 'applications',
 } as const
 
 export type routes = (typeof ROUTES)[keyof typeof ROUTES]
